@@ -3,17 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CleanArch.Application", "CleanArch.Application", "{845DE02A-7EF8-4102-AA90-62F152545347}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{845DE02A-7EF8-4102-AA90-62F152545347}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CleanArch.Domain", "CleanArch.Domain", "{FCC7BE87-4BEB-4CDB-A078-52F8EE18B4CF}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{FCC7BE87-4BEB-4CDB-A078-52F8EE18B4CF}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CleanArch.Infra.IoC", "CleanArch.Infra.IoC", "{3CAE612C-D5A1-4BAC-AB5D-9F3A93ADD329}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra.IoC", "Infra.IoC", "{3CAE612C-D5A1-4BAC-AB5D-9F3A93ADD329}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CleanArch.Infra.Data", "CleanArch.Infra.Data", "{FCDF036F-0ED6-4D6D-91BA-AD1FFFABE1B5}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra.Data", "Infra.Data", "{FCDF036F-0ED6-4D6D-91BA-AD1FFFABE1B5}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CleanArch.UI.Mvc", "CleanArch.UI.Mvc", "{A18A26AF-0B67-4620-BA19-9D30003944A1}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{A18A26AF-0B67-4620-BA19-9D30003944A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArch.Mvc", "CleanArch.Mvc\CleanArch.Mvc.csproj", "{23D19EE1-C271-44A0-A6AD-D20784EBE21D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArch.Mvc", "CleanArch.Mvc\CleanArch.Mvc.csproj", "{23D19EE1-C271-44A0-A6AD-D20784EBE21D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArch.Domain", "CleanArch.Domain\CleanArch.Domain.csproj", "{E52D34E6-E5CF-4C0D-B23E-CD35406D9973}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,12 +27,17 @@ Global
 		{23D19EE1-C271-44A0-A6AD-D20784EBE21D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23D19EE1-C271-44A0-A6AD-D20784EBE21D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{23D19EE1-C271-44A0-A6AD-D20784EBE21D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E52D34E6-E5CF-4C0D-B23E-CD35406D9973}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E52D34E6-E5CF-4C0D-B23E-CD35406D9973}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E52D34E6-E5CF-4C0D-B23E-CD35406D9973}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E52D34E6-E5CF-4C0D-B23E-CD35406D9973}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{23D19EE1-C271-44A0-A6AD-D20784EBE21D} = {A18A26AF-0B67-4620-BA19-9D30003944A1}
+		{E52D34E6-E5CF-4C0D-B23E-CD35406D9973} = {FCC7BE87-4BEB-4CDB-A078-52F8EE18B4CF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6E69DCC7-2D3C-4B65-B914-0FAC927FE94C}
