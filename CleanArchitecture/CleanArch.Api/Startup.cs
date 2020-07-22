@@ -1,3 +1,4 @@
+using CleanArch.Api.Configurations;
 using CleanArch.Infra.Data;
 using CleanArch.Infra.IoC;
 using Microsoft.AspNetCore.Builder;
@@ -39,6 +40,9 @@ namespace CleanArch.Api
             {
                 options.UseSqlServer(Configuration.GetConnectionString("UniversityDbConnection"));
             });
+
+            services.RegisterAutoMapper();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

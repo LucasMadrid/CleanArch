@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using CleanArch.Infra.Data;
 using CleanArch.Infra.IoC;
+using CleanArch.Mvc.Configurations;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI;
@@ -47,6 +48,7 @@ namespace CleanArch.Mvc
 
             RegisterServices(services);
 
+            services.RegisterAutoMapper();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
